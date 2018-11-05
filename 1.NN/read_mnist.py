@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #read MNIST dataset
-mnist = input_data.read_data_sets("MNIST_data/", one_hot = True)
+mnist = input_data.read_data_sets("mnist/", one_hot = True)
 train_img = mnist.train.images
 train_label = mnist.train.labels
 test_img = mnist.test.images
