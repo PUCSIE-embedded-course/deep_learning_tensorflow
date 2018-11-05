@@ -31,9 +31,9 @@ print(test_label.shape)
 ##########################################################
 
 #print(train_img[1, :])
-print("The image is " + str(np.argmax(train_label[1, :])))
+print("The image is", np.argmax(train_label[1, :]))
 
 #show a image with matlabplot
 img = np.reshape(train_img[1, :], (28, 28))     #convert data format
-plt.matshow(img, cmap = plt.get_cmap('gray')) #set stroke color
-plt.show()                                    #show the image
+plt.matshow(img, cmap = plt.get_cmap('gray'))   #set stroke color
+plt.show()                                      #show the image

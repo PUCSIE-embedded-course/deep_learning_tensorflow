@@ -68,11 +68,11 @@ for step in range(training_steps):
 
     #print every 50 epoch
     if step % 50 == 0:
-        print("loss = " + str(sess.run(loss, feed_dict = {x: batch_xs, y: batch_ys})))
+        print("loss =", sess.run(loss, feed_dict = {x: batch_xs, y: batch_ys}))
         summary = sess.run(merged, feed_dict = {x: batch_xs, y: batch_ys})
         writer.add_summary(summary, step)
 
-print("accuracy: ", sess.run(acc, feed_dict={x: test_img, y: test_label}))
+print("accuracy:", sess.run(acc, feed_dict={x: test_img, y: test_label}))
 
 ###########################################
 # randomly pick an image and identifiy it #
